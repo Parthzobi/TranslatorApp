@@ -32,6 +32,9 @@ class HomeVC: UIViewController {
     @IBOutlet weak var btnChangeLan: UIButton!
     @IBOutlet weak var btnSource: UIButton!
     @IBOutlet weak var btnDestination: UIButton!
+    @IBOutlet weak var btnSourceSpeak: UIButton!
+    @IBOutlet weak var btnDestinationSpeak: UIButton!
+    @IBOutlet weak var btnViewEndEventTap: UIButton!
     
     // MARK: Properties
     let ripple = Ripples()
@@ -47,6 +50,7 @@ class HomeVC: UIViewController {
     private var recognitionRequest: SFSpeechAudioBufferRecognitionRequest?
     private var recognitionTask: SFSpeechRecognitionTask?
     private let audioEngine = AVAudioEngine()
+    let synth = AVSpeechSynthesizer()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -102,6 +106,7 @@ class HomeVC: UIViewController {
     }
     
     private func prepareUI(){
+        synth.delegate = self
         self.btnRecord.isEnabled = false
         self.txtSource.placeholder = "Write here"
         ripple.radius = 200
@@ -156,6 +161,7 @@ class HomeVC: UIViewController {
             audioEngine.stop()
             recognitionRequest?.endAudio()
             btnRecord.isEnabled = false
+            btnViewEndEventTap.isHidden = true
             //recordButton.setTitle("Stopping", for: .disabled)
             btnRecord.setImage(UIImage.init(systemName: "mic.fill"), for: .normal)
             if ripple.isAnimating{
@@ -167,6 +173,7 @@ class HomeVC: UIViewController {
             do {
                 try startRecording()
                 //recordButton.setTitle("Stop Recording", for: [])
+                btnViewEndEventTap.isHidden = false
                 btnRecord.setImage(UIImage.init(systemName: "stop.fill"), for: .normal)
                 if ripple.isAnimating{
                     ripple.stop()
@@ -233,11 +240,13 @@ class HomeVC: UIViewController {
     }
     
     @IBAction func btnSourceSpeak(_ sender: UIButton){
+        guard sender.isEnabled == true else { return }
         guard let text = self.txtSource.text else { return }
         self.readText(text)
     }
     
     @IBAction func btnDestinationSpeak(_ sender: UIButton){
+        guard sender.isEnabled == true else { return }
         guard let text = self.txtDestination.text else { return }
         self.readText(text)
     }
@@ -255,6 +264,22 @@ class HomeVC: UIViewController {
     @IBAction func btnDeleteSource(_ sender: UIButton){
         self.txtSource.text = nil
         self.txtDestination.text = nil
+    }
+    
+    @IBAction func btnViewEndEventTap(_ sender: UIButton){
+        sender.isHidden = true
+        if audioEngine.isRunning {
+            audioEngine.stop()
+            recognitionRequest?.endAudio()
+            btnRecord.isEnabled = false
+            //recordButton.setTitle("Stopping", for: .disabled)
+            btnRecord.setImage(UIImage.init(systemName: "mic.fill"), for: .normal)
+            if ripple.isAnimating{
+                ripple.stop()
+            }else{
+                ripple.start()
+            }
+        }
     }
     
     func model(forLanguage: TranslateLanguage) -> TranslateRemoteModel {
@@ -309,16 +334,24 @@ class HomeVC: UIViewController {
     
     private func readText(_ text:String){
         if let language = NSLinguisticTagger.dominantLanguage(for: text) {
-            let utterance = AVSpeechUtterance(string: text)
-            utterance.voice = AVSpeechSynthesisVoice(language: language)
             
-            //control speed and pitch
-            //utterance.pitchMultiplier = 1
-            //utterance.rate = 0.2
-
-            let synth = AVSpeechSynthesizer()
-            synth.speak(utterance)
-
+            let audioSession = AVAudioSession.sharedInstance()
+            do {
+                try audioSession.setCategory(AVAudioSession.Category.soloAmbient)
+                try audioSession.setMode(AVAudioSession.Mode.spokenAudio)
+                try audioSession.setActive(true, options: .notifyOthersOnDeactivation)
+                
+                let utterance = AVSpeechUtterance(string: text)
+                utterance.voice = AVSpeechSynthesisVoice(language: language)
+                
+                //control speed and pitch
+                //utterance.pitchMultiplier = 1
+                //utterance.rate = 0.2
+                synth.speak(utterance)
+                
+            } catch {
+                print("audioSession properties weren't set because of an error.")
+            }
         } else {
             print("Unknown language")
         }
@@ -417,5 +450,24 @@ extension HomeVC: SFSpeechRecognizerDelegate{
             btnRecord.isEnabled = false
             //recordButton.setTitle("Recognition Not Available", for: .disabled)
         }
+    }
+}
+
+extension HomeVC: AVSpeechSynthesizerDelegate{
+    
+    func speechSynthesizer(_ synthesizer: AVSpeechSynthesizer, didStart utterance: AVSpeechUtterance) {
+        print("Start Speeck")
+        self.btnSourceSpeak.isEnabled = false
+        self.btnDestinationSpeak.isEnabled = false
+    }
+    
+    func speechSynthesizer(_ synthesizer: AVSpeechSynthesizer, didFinish utterance: AVSpeechUtterance) {
+        print("End Speeck")
+        self.btnSourceSpeak.isEnabled = true
+        self.btnDestinationSpeak.isEnabled = true
+    }
+    
+    func speechSynthesizer(_ synthesizer: AVSpeechSynthesizer, didCancel utterance: AVSpeechUtterance) {
+        print("Cancel Speeck")
     }
 }
