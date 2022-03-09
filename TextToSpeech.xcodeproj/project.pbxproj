@@ -1,0 +1,896 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		014E4CA31572A9AEDC99988F /* Pods_TextToSpeechTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE1E59A91B624C95CF6A2A5D /* Pods_TextToSpeechTests.framework */; };
+		542B50B960B9FD84CD929E27 /* Pods_TextToSpeech_TextToSpeechUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BFFCEFC9DA07159A106CDF3 /* Pods_TextToSpeech_TextToSpeechUITests.framework */; };
+		B2A4D43BF30DFEF2ED0592BF /* Pods_TextToSpeech.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46E9E337274C3EAD5C186587 /* Pods_TextToSpeech.framework */; };
+		EAAE0A8D27D1D1A000565E1C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAAE0A8C27D1D1A000565E1C /* AppDelegate.swift */; };
+		EAAE0A8F27D1D1A000565E1C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAAE0A8E27D1D1A000565E1C /* SceneDelegate.swift */; };
+		EAAE0A9127D1D1A000565E1C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAAE0A9027D1D1A000565E1C /* ViewController.swift */; };
+		EAAE0A9427D1D1A000565E1C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAAE0A9227D1D1A000565E1C /* Main.storyboard */; };
+		EAAE0A9727D1D1A000565E1C /* TextToSpeech.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EAAE0A9527D1D1A000565E1C /* TextToSpeech.xcdatamodeld */; };
+		EAAE0A9927D1D1A100565E1C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAAE0A9827D1D1A100565E1C /* Assets.xcassets */; };
+		EAAE0A9C27D1D1A100565E1C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAAE0A9A27D1D1A100565E1C /* LaunchScreen.storyboard */; };
+		EAAE0AA727D1D1A100565E1C /* TextToSpeechTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAAE0AA627D1D1A100565E1C /* TextToSpeechTests.swift */; };
+		EAAE0AB127D1D1A100565E1C /* TextToSpeechUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAAE0AB027D1D1A100565E1C /* TextToSpeechUITests.swift */; };
+		EAAE0AB327D1D1A100565E1C /* TextToSpeechUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAAE0AB227D1D1A100565E1C /* TextToSpeechUITestsLaunchTests.swift */; };
+		EAAE0AC827D1FAE100565E1C /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAAE0AC727D1FAE100565E1C /* HomeVC.swift */; };
+		EAAE0ACA27D212BF00565E1C /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAAE0AC927D212BF00565E1C /* Extension.swift */; };
+		EAAE0ACC27D2163400565E1C /* Ripples.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAAE0ACB27D2163400565E1C /* Ripples.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EAAE0AA327D1D1A100565E1C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EAAE0A8127D1D1A000565E1C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EAAE0A8827D1D1A000565E1C;
+			remoteInfo = TextToSpeech;
+		};
+		EAAE0AAD27D1D1A100565E1C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EAAE0A8127D1D1A000565E1C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EAAE0A8827D1D1A000565E1C;
+			remoteInfo = TextToSpeech;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0BFFCEFC9DA07159A106CDF3 /* Pods_TextToSpeech_TextToSpeechUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TextToSpeech_TextToSpeechUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		17C35C3718E71083F178ABB9 /* Pods-TextToSpeech-TextToSpeechUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TextToSpeech-TextToSpeechUITests.debug.xcconfig"; path = "Target Support Files/Pods-TextToSpeech-TextToSpeechUITests/Pods-TextToSpeech-TextToSpeechUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		46E9E337274C3EAD5C186587 /* Pods_TextToSpeech.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TextToSpeech.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4DE874110B0E9D0451BE83FC /* Pods-TextToSpeechTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TextToSpeechTests.debug.xcconfig"; path = "Target Support Files/Pods-TextToSpeechTests/Pods-TextToSpeechTests.debug.xcconfig"; sourceTree = "<group>"; };
+		839AD834E0B7B98309747DF4 /* Pods-TextToSpeech-TextToSpeechUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TextToSpeech-TextToSpeechUITests.release.xcconfig"; path = "Target Support Files/Pods-TextToSpeech-TextToSpeechUITests/Pods-TextToSpeech-TextToSpeechUITests.release.xcconfig"; sourceTree = "<group>"; };
+		B15AD327DA19377D6E0C0DC4 /* Pods-TextToSpeech.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TextToSpeech.debug.xcconfig"; path = "Target Support Files/Pods-TextToSpeech/Pods-TextToSpeech.debug.xcconfig"; sourceTree = "<group>"; };
+		CCE6625B5AE01005D52A6796 /* Pods-TextToSpeechTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TextToSpeechTests.release.xcconfig"; path = "Target Support Files/Pods-TextToSpeechTests/Pods-TextToSpeechTests.release.xcconfig"; sourceTree = "<group>"; };
+		CE1E59A91B624C95CF6A2A5D /* Pods_TextToSpeechTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TextToSpeechTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D124297E565BC99CC6FDDFA7 /* Pods-TextToSpeech.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TextToSpeech.release.xcconfig"; path = "Target Support Files/Pods-TextToSpeech/Pods-TextToSpeech.release.xcconfig"; sourceTree = "<group>"; };
+		EAAE0A8927D1D1A000565E1C /* TextToSpeech.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TextToSpeech.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EAAE0A8C27D1D1A000565E1C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EAAE0A8E27D1D1A000565E1C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		EAAE0A9027D1D1A000565E1C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EAAE0A9327D1D1A000565E1C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EAAE0A9627D1D1A000565E1C /* TextToSpeech.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TextToSpeech.xcdatamodel; sourceTree = "<group>"; };
+		EAAE0A9827D1D1A100565E1C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EAAE0A9B27D1D1A100565E1C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EAAE0A9D27D1D1A100565E1C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EAAE0AA227D1D1A100565E1C /* TextToSpeechTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TextToSpeechTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EAAE0AA627D1D1A100565E1C /* TextToSpeechTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextToSpeechTests.swift; sourceTree = "<group>"; };
+		EAAE0AAC27D1D1A100565E1C /* TextToSpeechUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TextToSpeechUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EAAE0AB027D1D1A100565E1C /* TextToSpeechUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextToSpeechUITests.swift; sourceTree = "<group>"; };
+		EAAE0AB227D1D1A100565E1C /* TextToSpeechUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextToSpeechUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		EAAE0AC727D1FAE100565E1C /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		EAAE0AC927D212BF00565E1C /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		EAAE0ACB27D2163400565E1C /* Ripples.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ripples.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EAAE0A8627D1D1A000565E1C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2A4D43BF30DFEF2ED0592BF /* Pods_TextToSpeech.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAAE0A9F27D1D1A100565E1C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				014E4CA31572A9AEDC99988F /* Pods_TextToSpeechTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAAE0AA927D1D1A100565E1C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				542B50B960B9FD84CD929E27 /* Pods_TextToSpeech_TextToSpeechUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		45CB4C920871A02D9B889669 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				46E9E337274C3EAD5C186587 /* Pods_TextToSpeech.framework */,
+				0BFFCEFC9DA07159A106CDF3 /* Pods_TextToSpeech_TextToSpeechUITests.framework */,
+				CE1E59A91B624C95CF6A2A5D /* Pods_TextToSpeechTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DFF9E46EBFD1003DE09AC614 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B15AD327DA19377D6E0C0DC4 /* Pods-TextToSpeech.debug.xcconfig */,
+				D124297E565BC99CC6FDDFA7 /* Pods-TextToSpeech.release.xcconfig */,
+				17C35C3718E71083F178ABB9 /* Pods-TextToSpeech-TextToSpeechUITests.debug.xcconfig */,
+				839AD834E0B7B98309747DF4 /* Pods-TextToSpeech-TextToSpeechUITests.release.xcconfig */,
+				4DE874110B0E9D0451BE83FC /* Pods-TextToSpeechTests.debug.xcconfig */,
+				CCE6625B5AE01005D52A6796 /* Pods-TextToSpeechTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		EAAE0A8027D1D1A000565E1C = {
+			isa = PBXGroup;
+			children = (
+				EAAE0A8B27D1D1A000565E1C /* TextToSpeech */,
+				EAAE0AA527D1D1A100565E1C /* TextToSpeechTests */,
+				EAAE0AAF27D1D1A100565E1C /* TextToSpeechUITests */,
+				EAAE0A8A27D1D1A000565E1C /* Products */,
+				DFF9E46EBFD1003DE09AC614 /* Pods */,
+				45CB4C920871A02D9B889669 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		EAAE0A8A27D1D1A000565E1C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EAAE0A8927D1D1A000565E1C /* TextToSpeech.app */,
+				EAAE0AA227D1D1A100565E1C /* TextToSpeechTests.xctest */,
+				EAAE0AAC27D1D1A100565E1C /* TextToSpeechUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EAAE0A8B27D1D1A000565E1C /* TextToSpeech */ = {
+			isa = PBXGroup;
+			children = (
+				EAAE0AC427D1D68300565E1C /* Extensions */,
+				EAAE0AC327D1D67300565E1C /* Manager */,
+				EAAE0AC227D1D66300565E1C /* Controller */,
+				EAAE0AC127D1D65D00565E1C /* View */,
+				EAAE0AC027D1D65700565E1C /* Model */,
+				EAAE0ABF27D1D64400565E1C /* App Config */,
+				EAAE0A9827D1D1A100565E1C /* Assets.xcassets */,
+				EAAE0A9D27D1D1A100565E1C /* Info.plist */,
+				EAAE0A9527D1D1A000565E1C /* TextToSpeech.xcdatamodeld */,
+			);
+			path = TextToSpeech;
+			sourceTree = "<group>";
+		};
+		EAAE0AA527D1D1A100565E1C /* TextToSpeechTests */ = {
+			isa = PBXGroup;
+			children = (
+				EAAE0AA627D1D1A100565E1C /* TextToSpeechTests.swift */,
+			);
+			path = TextToSpeechTests;
+			sourceTree = "<group>";
+		};
+		EAAE0AAF27D1D1A100565E1C /* TextToSpeechUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EAAE0AB027D1D1A100565E1C /* TextToSpeechUITests.swift */,
+				EAAE0AB227D1D1A100565E1C /* TextToSpeechUITestsLaunchTests.swift */,
+			);
+			path = TextToSpeechUITests;
+			sourceTree = "<group>";
+		};
+		EAAE0ABF27D1D64400565E1C /* App Config */ = {
+			isa = PBXGroup;
+			children = (
+				EAAE0A8C27D1D1A000565E1C /* AppDelegate.swift */,
+				EAAE0A8E27D1D1A000565E1C /* SceneDelegate.swift */,
+				EAAE0A9027D1D1A000565E1C /* ViewController.swift */,
+			);
+			path = "App Config";
+			sourceTree = "<group>";
+		};
+		EAAE0AC027D1D65700565E1C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EAAE0AC127D1D65D00565E1C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EAAE0AC627D1D6AC00565E1C /* Storyboards */,
+				EAAE0AC527D1D69C00565E1C /* Cells */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EAAE0AC227D1D66300565E1C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EAAE0AC727D1FAE100565E1C /* HomeVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		EAAE0AC327D1D67300565E1C /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		EAAE0AC427D1D68300565E1C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				EAAE0AC927D212BF00565E1C /* Extension.swift */,
+				EAAE0ACB27D2163400565E1C /* Ripples.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		EAAE0AC527D1D69C00565E1C /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		EAAE0AC627D1D6AC00565E1C /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				EAAE0A9227D1D1A000565E1C /* Main.storyboard */,
+				EAAE0A9A27D1D1A100565E1C /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EAAE0A8827D1D1A000565E1C /* TextToSpeech */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EAAE0AB627D1D1A100565E1C /* Build configuration list for PBXNativeTarget "TextToSpeech" */;
+			buildPhases = (
+				CF862589F470B503F6D40B7E /* [CP] Check Pods Manifest.lock */,
+				EAAE0A8527D1D1A000565E1C /* Sources */,
+				EAAE0A8627D1D1A000565E1C /* Frameworks */,
+				EAAE0A8727D1D1A000565E1C /* Resources */,
+				59091900942660DAACAB93A5 /* [CP] Embed Pods Frameworks */,
+				BF5C0815A9626A96AFCE8E70 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TextToSpeech;
+			productName = TextToSpeech;
+			productReference = EAAE0A8927D1D1A000565E1C /* TextToSpeech.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EAAE0AA127D1D1A100565E1C /* TextToSpeechTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EAAE0AB927D1D1A100565E1C /* Build configuration list for PBXNativeTarget "TextToSpeechTests" */;
+			buildPhases = (
+				61B02EE48BFE93BF0A2C68B3 /* [CP] Check Pods Manifest.lock */,
+				EAAE0A9E27D1D1A100565E1C /* Sources */,
+				EAAE0A9F27D1D1A100565E1C /* Frameworks */,
+				EAAE0AA027D1D1A100565E1C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EAAE0AA427D1D1A100565E1C /* PBXTargetDependency */,
+			);
+			name = TextToSpeechTests;
+			productName = TextToSpeechTests;
+			productReference = EAAE0AA227D1D1A100565E1C /* TextToSpeechTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EAAE0AAB27D1D1A100565E1C /* TextToSpeechUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EAAE0ABC27D1D1A100565E1C /* Build configuration list for PBXNativeTarget "TextToSpeechUITests" */;
+			buildPhases = (
+				4B3862181E1BD5BC99248567 /* [CP] Check Pods Manifest.lock */,
+				EAAE0AA827D1D1A100565E1C /* Sources */,
+				EAAE0AA927D1D1A100565E1C /* Frameworks */,
+				EAAE0AAA27D1D1A100565E1C /* Resources */,
+				9854A24D1D6F31AE8E47E875 /* [CP] Embed Pods Frameworks */,
+				C2984570E7BBE85664FB417B /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EAAE0AAE27D1D1A100565E1C /* PBXTargetDependency */,
+			);
+			name = TextToSpeechUITests;
+			productName = TextToSpeechUITests;
+			productReference = EAAE0AAC27D1D1A100565E1C /* TextToSpeechUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EAAE0A8127D1D1A000565E1C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					EAAE0A8827D1D1A000565E1C = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					EAAE0AA127D1D1A100565E1C = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = EAAE0A8827D1D1A000565E1C;
+					};
+					EAAE0AAB27D1D1A100565E1C = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = EAAE0A8827D1D1A000565E1C;
+					};
+				};
+			};
+			buildConfigurationList = EAAE0A8427D1D1A000565E1C /* Build configuration list for PBXProject "TextToSpeech" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EAAE0A8027D1D1A000565E1C;
+			productRefGroup = EAAE0A8A27D1D1A000565E1C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EAAE0A8827D1D1A000565E1C /* TextToSpeech */,
+				EAAE0AA127D1D1A100565E1C /* TextToSpeechTests */,
+				EAAE0AAB27D1D1A100565E1C /* TextToSpeechUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EAAE0A8727D1D1A000565E1C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAAE0A9C27D1D1A100565E1C /* LaunchScreen.storyboard in Resources */,
+				EAAE0A9927D1D1A100565E1C /* Assets.xcassets in Resources */,
+				EAAE0A9427D1D1A000565E1C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAAE0AA027D1D1A100565E1C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAAE0AAA27D1D1A100565E1C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4B3862181E1BD5BC99248567 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TextToSpeech-TextToSpeechUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		59091900942660DAACAB93A5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TextToSpeech/Pods-TextToSpeech-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TextToSpeech/Pods-TextToSpeech-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TextToSpeech/Pods-TextToSpeech-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		61B02EE48BFE93BF0A2C68B3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TextToSpeechTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9854A24D1D6F31AE8E47E875 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TextToSpeech-TextToSpeechUITests/Pods-TextToSpeech-TextToSpeechUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TextToSpeech-TextToSpeechUITests/Pods-TextToSpeech-TextToSpeechUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TextToSpeech-TextToSpeechUITests/Pods-TextToSpeech-TextToSpeechUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BF5C0815A9626A96AFCE8E70 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TextToSpeech/Pods-TextToSpeech-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TextToSpeech/Pods-TextToSpeech-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TextToSpeech/Pods-TextToSpeech-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C2984570E7BBE85664FB417B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TextToSpeech-TextToSpeechUITests/Pods-TextToSpeech-TextToSpeechUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TextToSpeech-TextToSpeechUITests/Pods-TextToSpeech-TextToSpeechUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TextToSpeech-TextToSpeechUITests/Pods-TextToSpeech-TextToSpeechUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CF862589F470B503F6D40B7E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TextToSpeech-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EAAE0A8527D1D1A000565E1C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAAE0ACC27D2163400565E1C /* Ripples.swift in Sources */,
+				EAAE0A9127D1D1A000565E1C /* ViewController.swift in Sources */,
+				EAAE0AC827D1FAE100565E1C /* HomeVC.swift in Sources */,
+				EAAE0A9727D1D1A000565E1C /* TextToSpeech.xcdatamodeld in Sources */,
+				EAAE0ACA27D212BF00565E1C /* Extension.swift in Sources */,
+				EAAE0A8D27D1D1A000565E1C /* AppDelegate.swift in Sources */,
+				EAAE0A8F27D1D1A000565E1C /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAAE0A9E27D1D1A100565E1C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAAE0AA727D1D1A100565E1C /* TextToSpeechTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAAE0AA827D1D1A100565E1C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAAE0AB327D1D1A100565E1C /* TextToSpeechUITestsLaunchTests.swift in Sources */,
+				EAAE0AB127D1D1A100565E1C /* TextToSpeechUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EAAE0AA427D1D1A100565E1C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EAAE0A8827D1D1A000565E1C /* TextToSpeech */;
+			targetProxy = EAAE0AA327D1D1A100565E1C /* PBXContainerItemProxy */;
+		};
+		EAAE0AAE27D1D1A100565E1C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EAAE0A8827D1D1A000565E1C /* TextToSpeech */;
+			targetProxy = EAAE0AAD27D1D1A100565E1C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EAAE0A9227D1D1A000565E1C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EAAE0A9327D1D1A000565E1C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EAAE0A9A27D1D1A100565E1C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EAAE0A9B27D1D1A100565E1C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EAAE0AB427D1D1A100565E1C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EAAE0AB527D1D1A100565E1C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EAAE0AB727D1D1A100565E1C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B15AD327DA19377D6E0C0DC4 /* Pods-TextToSpeech.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5H7D8C9TYQ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TextToSpeech/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Zobi.TextToSpeech;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		EAAE0AB827D1D1A100565E1C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D124297E565BC99CC6FDDFA7 /* Pods-TextToSpeech.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5H7D8C9TYQ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TextToSpeech/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Zobi.TextToSpeech;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		EAAE0ABA27D1D1A100565E1C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4DE874110B0E9D0451BE83FC /* Pods-TextToSpeechTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5H7D8C9TYQ;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Zobi.TextToSpeechTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TextToSpeech.app/TextToSpeech";
+			};
+			name = Debug;
+		};
+		EAAE0ABB27D1D1A100565E1C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CCE6625B5AE01005D52A6796 /* Pods-TextToSpeechTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5H7D8C9TYQ;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Zobi.TextToSpeechTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TextToSpeech.app/TextToSpeech";
+			};
+			name = Release;
+		};
+		EAAE0ABD27D1D1A100565E1C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 17C35C3718E71083F178ABB9 /* Pods-TextToSpeech-TextToSpeechUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5H7D8C9TYQ;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Zobi.TextToSpeechUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TextToSpeech;
+			};
+			name = Debug;
+		};
+		EAAE0ABE27D1D1A100565E1C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 839AD834E0B7B98309747DF4 /* Pods-TextToSpeech-TextToSpeechUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5H7D8C9TYQ;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Zobi.TextToSpeechUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TextToSpeech;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EAAE0A8427D1D1A000565E1C /* Build configuration list for PBXProject "TextToSpeech" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EAAE0AB427D1D1A100565E1C /* Debug */,
+				EAAE0AB527D1D1A100565E1C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EAAE0AB627D1D1A100565E1C /* Build configuration list for PBXNativeTarget "TextToSpeech" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EAAE0AB727D1D1A100565E1C /* Debug */,
+				EAAE0AB827D1D1A100565E1C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EAAE0AB927D1D1A100565E1C /* Build configuration list for PBXNativeTarget "TextToSpeechTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EAAE0ABA27D1D1A100565E1C /* Debug */,
+				EAAE0ABB27D1D1A100565E1C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EAAE0ABC27D1D1A100565E1C /* Build configuration list for PBXNativeTarget "TextToSpeechUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EAAE0ABD27D1D1A100565E1C /* Debug */,
+				EAAE0ABE27D1D1A100565E1C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		EAAE0A9527D1D1A000565E1C /* TextToSpeech.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				EAAE0A9627D1D1A000565E1C /* TextToSpeech.xcdatamodel */,
+			);
+			currentVersion = EAAE0A9627D1D1A000565E1C /* TextToSpeech.xcdatamodel */;
+			path = TextToSpeech.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = EAAE0A8127D1D1A000565E1C /* Project object */;
+}
